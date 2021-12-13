@@ -4,7 +4,7 @@ GradeBoundaries = {'A': 75,'B':60,'C': 52,'D': 41,'E': 20,'F': 10}
 def GradeChecker():
   GradeScore = int(input('What is your score?'))
   while GradeScore < 0 or GradeScore > 100:
-    GradeScore = int(input('Can you please make it above 0? You are not that dumb.'))
+    GradeScore = int(input('Can you please make it above 0?'))
   return GradeScore 
 # the function above inputs the score
 class Grades:
