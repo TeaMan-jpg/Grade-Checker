@@ -13,6 +13,22 @@ class Grades:
     self.Boundary.update(Boundaries) #updates the dictionary from GradeBoundaries into the empty dictionary for usage
     self.Grade = 0 # sets the grade to 0 because I has no idea what else to do to define it as
     self.Grade += Grade # updates the grades from the function above
+    
+  def printgrades(self):
+    if Grading.GradeA(): # prints the grade
+     print('A')
+    elif Grading.GradeB():
+     print('B')
+    elif Grading.GradeC():
+      print('C')
+    elif Grading.GradeD():
+      print('D')
+    elif Grading.GradeE():
+      print('E')
+    elif Grading.GradeF():
+      print('F')
+    elif Grading.GradeU():
+      print('U')
 
   def GradeA(self):
     if self.Grade >= self.Boundary['A']: # compares the curent grade to the boundary, if the grade inputted is higher than boundary A, the return True
@@ -45,6 +61,7 @@ class Grades:
 
 
 Grading = Grades(GradeBoundaries,GradeChecker())
+Grading.printgrades()
 if Grading.GradeA(): # prints the grade
   print('A')
 elif Grading.GradeB():
